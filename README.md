@@ -111,3 +111,24 @@ And I ran a scan to determine:
 
 Evidence: 05_kali_nmap_initial_service_discovery.jpg
 <img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/140f8e15-30f5-4f7b-9b86-fda56973d152" />
+
+## Phase 4 — Enumeration (Deep Target Profiling)
+
+Objective: Expand findings into a clear “attack surface map” (what’s exposed, what’s risky, what’s likely exploitable).
+
+#### Step 4.1 — Enumerate more services
+
+I documented additional services typically present on Metasploitable 2 (web, RPC, file sharing, databases, etc.).
+
+The point here is prioritization: older/insecure services + remote access = high risk.
+
+Evidence: 06_kali_nmap_full_enumeration_services.jpg
+<img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/a151e71a-c844-4ab7-81a5-377b9bcba3fa" />
+
+
+#### Step 4.2 — Collect OS/service metadata
+
+I captured OS guesses, script results, and network distance (useful for validation and reporting).
+
+Evidence: 07_kali_nmap_os_scripts_traceroute.jpg
+<img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/392b7696-d4ba-4a76-9207-9bfaffb614a4" />
