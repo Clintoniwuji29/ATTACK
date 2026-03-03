@@ -239,3 +239,70 @@ This is a complete critical severity breach scenario.
 
 > Evidence: 11
 <img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/a4192f66-0dac-43ac-9672-a6f5af572638" />
+
+---
+
+## Phase 8 - What Happened (Critical Step)
+
+After gaining root, I began post-exploitation enumeration:
+
+> pwd
+
+> ls
+
+> cat /etc/passwd
+
+I successfully accessed and read /etc/passwd.
+
+#### Significance of this: I did not stop at exploitation.
+
+- I validated system-level file access
+
+- I demonstrated impact by enumerating local accounts
+
+- I showed understanding of Linux privilege structure
+
+
+#### I moved into:
+
+- Local user enumeration
+
+- Service account identification
+
+- Potential lateral movement analysis
+
+  
+> Evidence: 12
+<img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/d35c4f2e-3dd1-412d-baf4-12cd163f8e42" />
+
+## Achievement Summary:
+
+### What I accomplished in this lab is not “just running Metasploit.” I demonstrated the ability to:
+
+- Correctly configure a segmented lab network
+
+- Validate routing and IP assignments
+
+- Perform active reconnaissance using Nmap
+
+- Interpret service banners and versions
+
+- Identify vulnerable service exposure
+
+- Map discovered version → known exploit
+
+- Configure and execute a targeted exploit
+
+- Successfully obtain a root shell
+
+- Verify privilege escalation status
+
+- Perform post-compromise enumeration
+
+- Access sensitive system files
+
+- Understand account structure and privilege boundaries
+
+- I executed the full red team lifecycle.
+
+---
