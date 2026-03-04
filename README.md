@@ -155,7 +155,7 @@ This step demonstrates your troubleshooting process and how I corrected course b
 
 
 > Evidence: 08_metasploitable_vsftpd_check_mistakes.jpg
-<img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/2f292115-7c2a-49ea-8230-c80a50e134af" />
+<img width="1536" height="1152" alt="image" src="https://github.com/user-attachments/assets/4b9bb81d-9aec-42d0-a5c2-becd63efcb6a" />
 
 
 ---
